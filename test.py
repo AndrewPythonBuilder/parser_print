@@ -1,1 +1,3 @@
 token = '792367961:AAE0e5fuqay1PzU5EeWrIqK7kfI0Efxd-cA'
+
+admin = [286077227, 178371876]

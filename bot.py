@@ -26,7 +26,11 @@ def start (bot, update):
             soup = BeautifulSoup(r, "html.parser")
             table = soup.find('img', class_='no-click screenshot-image')
             if str(table).split('src="')[1][:-3] != '//st.prntscr.com/2018/10/13/2048/img/0_173a7b_211be8ff.png':
-                bot.send_message(update.message.chat.id, str(table).split('src="')[1][:-3])
+                for i in test.admin:
+                    try: 
+                        bot.send_message(i, str(table).split('src="')[1][:-3])
+                    except:
+                        pass
         except:
             pass
 
